@@ -52,29 +52,36 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Eureka! {}, myself {}!* 
-*An Anime themed group management bot from* [Steins;Gate](https://anilist.co/anime/9253)!!
+*𝐇𝐞𝐲 {}, 𝐌𝐲𝐬𝐞𝐥𝐟 {} 𝐀 𝐅𝐢𝐫𝐞 𝐃𝐫𝐚𝐠𝐨𝐧 𝐒𝐥𝐚𝐲𝐞𝐫 𝐅𝐫𝐨𝐦 𝐅𝐚𝐢𝐫𝐲 𝐓𝐚𝐢𝐥.✥!* 
 
-• *Uptime:* `{}`
+✥𝐈 𝐀𝐦 𝐀𝐧 𝐀𝐧𝐢𝐦𝐞 𝐓𝐡𝐞𝐦𝐞𝐝 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭.✥
+
+✥𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐌𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐌𝐨𝐝𝐮𝐥𝐞 𝐎𝐫 𝐓𝐲𝐩𝐞 /help...✥
+
+• *𝐔𝐩𝐭𝐢𝐦𝐞:* `{}`
 • `{}` *users, across* `{}` *chats.*
 """
 
 HELP_STRINGS = """
-*{} comes with:*
-*AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
+{} 𝐂𝐨𝐦𝐞𝐬 𝐖𝐢𝐭𝐡:
 
-🎛 *All commands can either be used with* `/` *or* `!`.
-🎛 *Reach out for support:* @KurisuSupport [.](https://telegra.ph/file/2291942331f135e3292ee.png)
+✥𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐇𝐚𝐬 𝐌𝐚𝐧𝐲 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧 𝐂𝐡𝐨𝐨𝐬𝐞 𝐀𝐧𝐲 𝐌𝐨𝐝𝐮𝐥𝐞 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐞.✥
+
+✥𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐀𝐫𝐞 𝐄𝐢𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐝 𝐁𝐲 `/` 𝐎𝐫 `!`.✥
+
+✥𝐑𝐞𝐚𝐜𝐡 𝐎𝐮𝐭 𝐅𝐨𝐫 𝐎𝐮𝐫 𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩. @TheChamberOfAnimeFans ✥ [.](https://telegra.ph/file/35ceabd40a421297951e9.jpg)
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KURISU_IMG = "https://telegra.ph/file/6152bf2f73ca8ea30772a.png"
-KURISUIMGSTART = "https://telegra.ph/file/bd01a439fefb53170b36f.gif"
+KURISU_IMG = "https://telegra.ph/file/3f1ca81e54efed09f0461.jpg"
+KURISUIMGSTART = "https://telegra.ph/file/c4a69bdc855667d783958.mp4"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """𝐇𝐞𝐲𝐚, 𝐠𝐥𝐚𝐝 𝐭𝐨 𝐡𝐞𝐚𝐫 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐝𝐨𝐧𝐚𝐭𝐞!
+
+𝐁𝐮𝐭 𝐎𝐮𝐫 𝐎𝐰𝐧𝐞𝐫 𝐈𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐕𝐞𝐫𝐲 𝐑𝐢𝐜𝐡, 𝐍𝐨 𝐍𝐞𝐞𝐝 𝐓𝐨 𝐃𝐨𝐧𝐚𝐭𝐞.
+
+𝐉𝐮𝐬𝐭 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 𝐓𝐨 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐔𝐬. @TheChamberOfAnimeFans"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -96,6 +103,7 @@ for module_name in ALL_MODULES:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
         raise Exception(
+         
             "Can't have two modules with the same name! Please change one")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
@@ -195,35 +203,35 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="➕ Add Kurisu To Your Group",
+                            text="Add Natsu To Your Group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="⚙️ Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="Anime Channel",
+                             url=f"https://t.me/animechamberuploads"),
                          InlineKeyboardButton(
-                             text="🎉 Updates",
-                             url="https://t.me/steinsupdates"),
+                             text="Manga Channel",
+                             url="https://t.me/mangachamber"),
                          InlineKeyboardButton(
-                             text="🗃 Guide",
-                             url="https://t.me/Steinsupdates/7"),
+                             text="Ongoing Anime",
+                             url="https://t.me/animechamberongoing"),
               
                     ],
                      [
                         InlineKeyboardButton(
-                             text="Anime Chat",
-                             url="https://t.me/ias_chats"),                    
+                             text="Chat Group",
+                             url="https://t.me/thechamberofanimefans"),                    
                         InlineKeyboardButton(
                              text="Help & Commands",
-                             url="https://t.me/Kurisu_Makise_Robot?start=help"),      
+                             url="https://t.me/NatsuDragneel_0bot?start=help"),      
                     ]]))
     else:
         update.effective_message.reply_video(
                 KURISUIMGSTART)
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "I Am More Fired Up Now!\n<b>Haven't slept since:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -259,6 +267,7 @@ def error_callback(update: Update, context: CallbackContext):
 
 
 @run_async
+
 def help_button(update, context):
     query = update.callback_query
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
@@ -500,7 +509,7 @@ def donate(update: Update, context: CallbackContext):
         if OWNER_ID != 254318997 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
-                "[here]({})".format(DONATION_LINK),
+                "[here]({})".format(SUPPPORT_CHAT),
                 parse_mode=ParseMode.MARKDOWN)
 
     else:
@@ -541,7 +550,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online!](https://telegra.ph/file/26aeb38f38eb8c819e423.mp4)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am fired up now!](https://telegra.ph/file/c4a69bdc855667d783958.mp4)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
@@ -585,7 +594,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Kurisu Makise is deployed sucessfully...")
+        LOGGER.info("Natsu Dragneel is deployed sucessfully...")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
