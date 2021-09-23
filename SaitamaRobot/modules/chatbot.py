@@ -70,11 +70,14 @@ def remove_chat(update: Update, context: CallbackContext):
 
 def check_message(context: CallbackContext, message):
     reply_msg = message.reply_to_message
-    if message.text.lower() == "makise":
+    if message.text.lower() == "natsu":
         return True
-    if message.text.lower() == "kurisu":
+    if message.text.lower() == "good morning":
         return True
-    if message.text.lower() == "kurisu makise":
+    if message.text.lower() == "good night":
+
+
+
         return True
     if message.text.lower() == "hi":
         return True
@@ -143,7 +146,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a more interactive group chat experience.
+Chatbot utilizes the CoffeeHouse API and allows Natsu to talk and provides a more interactive group chat experience.
 
 *Commands:* 
 *Admins only:*
@@ -151,7 +154,7 @@ Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a m
  • `/rmchat`*:* Disables Chatbot mode in the chat.
 
 Reports bugs at @{SUPPORT_CHAT}
-*Powered by CoffeeHouse* (https://coffeehouse.intellivoid.net/) from @Intellivoid
+*Powered by CoffeeHouse* (https://coffeehouse.intellivoid.net/).
 """
 
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat)
